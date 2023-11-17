@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h1>Hesap Makinesi</h1>
+  <meta charset="UTF-8">
+  <style>
+ 
+    input[type="button"] {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="display" style="width: 20%; height:40px; font-size:20px; background-color: #fff; border: 3px solid ; text-align: right;" disabled><br>
+ 
+  <input type="button" value="1" style="background-color:pink;" onclick="addToDisplay('1')">
+  <input type="button" value="2"  style="background-color:pink;" onclick="addToDisplay('2')">
+  <input type="button" value="3"  style="background-color:pink;" onclick="addToDisplay('3')">
+  <input type="button" value="+"  style="background-color:orange;"  onclick="addToDisplay('+')"><br>
+
+  <input type="button" value="4"  style="background-color:pink;" onclick="addToDisplay('4')">
+  <input type="button" value="5"  style="background-color:pink;" onclick="addToDisplay('5')">
+  <input type="button" value="6"  style="background-color:pink;" onclick="addToDisplay('6')">
+  <input type="button" value="-" style="background-color:orange;"   onclick="addToDisplay('-')"><br>
+
+  <input type="button" value="7"  style="background-color:pink;" onclick="addToDisplay('7')">
+  <input type="button" value="8"  style="background-color:pink;" onclick="addToDisplay('8')">
+  <input type="button" value="9"  style="background-color:pink;" onclick="addToDisplay('9')">
+  <input type="button" value="*"  style="background-color:orange;" onclick="addToDisplay('*')"><br>
+
+  <input type="button" value="C" style ="background-color:tomato;"   onclick="clearDisplay()">
+  <input type="button" value="0"  style="background-color:pink;" onclick="addToDisplay('0')">
+  <input type="button" value="="  style="background-color: lightblue;" onclick="calculate()">
+  <input type="button" value="/"  style="background-color:orange;"  onclick="addToDisplay('/')">
+
+  <script>
+    function addToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+      let expression = document.getElementById('display').value;
+      let result = eval(expression); 
+      document.getElementById('display').value = result;
+    }
+  </script>
+
+</body>
+</html>
