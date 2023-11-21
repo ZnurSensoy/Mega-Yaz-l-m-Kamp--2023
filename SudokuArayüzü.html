@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <div align="center">
+    <h1>SUDOKU</h1>
+</div>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+    
+    td {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .light {
+      background-color: #f2f2f2;
+    }
+    
+    .dark {
+      background-color: #b3b3cc;
+    }
+    
+    .rowgroup:nth-child(3n) td,
+    .rowgroup:nth-child(6n) td {
+      border-bottom: 2px solid black;
+    }
+    
+    .colgroup:nth-child(3n) td,
+    .colgroup:nth-child(6n) td {
+      border-right: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr class="rowgroup">
+        <td class="light">1</td>
+        <td class="light">2</td>
+        <td class="dark">3</td>
+        <td class="dark">4</td>
+        <td class="light">5</td>
+        <td class="light">6</td>
+        <td class="dark">7</td>
+        <td class="dark">8</td>
+        <td class="light">9</td>
+      <tr class="rowgroup">
+        <td class="dark">4</td>
+        <td class="dark">5</td>
+        <td class="light">6</td>
+        <td class="light">7</td>
+        <td class="dark">8</td>
+        <td class="dark">9</td>
+        <td class="light">1</td>
+        <td class="light">2</td>
+        <td class="dark">3</td>
+      </tr>
+      <tr class="rowgroup">
+        <td class="light">7</td>
+        <td class="light">8</td>
+        <td class="dark">9</td>
+        <td class="dark">1</td>
+        <td class="light">2</td>
+        <td class="light">3</td>
+        <td class="dark">4</td>
+        <td class="dark">5</td>
+        <td class="light">6</td>
+      </tr>
+      <tr class="rowgroup">
+        <td class="dark">2</td>
+        <td class="dark">3</td>
+        <td class="light">4</td>
+        <td class="light">5</td>
+        <td class="dark">6</td>
+        <td class="dark">7</td>
+        <td class="light">8</td>
+        <td class="light">9</td>
+        <td class="dark">1</td>
+      </tr>
+      <tr class="rowgroup">
+        <td class="light">5</td>
+        <td class="light">6</td>
+        <td class="dark">7</td>
+        <td class="dark">8</td>
+        <td class="light">9</td>
+        <td class="light">1</td>
+        <td class="dark">2</td>
+        <td class="dark">3</td>
+        <td class="light">4</td>
+      </tr>
+      <tr class="rowgroup">
+        <td class="dark">8</td>
+        <td class="dark">9</td>
+        <td class="light">1</td>
+        <td class="light">2</td>
+        <td class="dark">3</td>
+        <td class="dark">4</td>
+        <td class="light">5</td>
+        <td class="light">6</td>
+        <td class="dark">7</td>
+      </tr>
+      <tr class="rowgroup">
+        <td class="light">3</td>
+        <td class="light">4</td>
+        <td class="dark">5</td>
+        <td class="dark">6</td>
+        <td class="light">7</td>
+        <td class="light">8</td>
+        <td class="dark">9</td>
+        <td class="dark">1</td>
+        <td class="light">2</td>
+      </tr>
+     
