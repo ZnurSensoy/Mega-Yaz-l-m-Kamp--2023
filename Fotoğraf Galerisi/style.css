@@ -1,0 +1,16 @@
+:root {
+    --secondary-color: #6c757d; 
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --error-bg: #f8d7da;
+    --error-border: #f5c6cb;
+}
+
+body {
+    font-family: var(--font-family); 
+    color: var(--secondary-color); 
+}
+
+#gallery {
+    margin-top: 20px;
+}
+
