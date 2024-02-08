@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+#whyUs {
+  float: left;
+  display: inline;
+  width: 100%;
+}
+.whyus_top {
+  float: left;
+  display: inline;
+  width: 100%;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+
+  padding: 60px 0px;
+}
+.single_whyus_top {
+  float: left;
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+.title_area {
+  float: left;
+  display: inline;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title_area span {
+  display: inline-block;
+  text-align: center;
+  height: 5px;
+  width: 50px;
+}
+.title_two {
+  padding-bottom: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.whyus_icon {
+  border-radius: 150px;
+  color: #ffffff;
+  display: inline-block;
+  height: 150px;
+  text-align: center;
+  width: 150px;
+}
+.whyus_icon span {
+  display: inline-block;
+  font-size: 70px;
+  height: 100%;
+  line-height: 160px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.single_whyus_top:hover .whyus_icon span {
+  transform: scale(0.9);
+}
+.single_whyus_top > h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.single_whyus_top > p {
+  font-size: 13px;
+}
+.whyus_bottom {
+  float: left;
+  display: inline;
+  width: 100%;
+  min-height: 350px;
+  padding: 85px 0px;
+  background-image: url("../../assets/img/skills_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.slider_overlay {
+  background: none repeat scroll 0 0 #242434;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.skills {
+  position: relative;
+  z-index: 999;
+}
+
+.heading h3 {
+  color: #fff;
+  display: inline-block;
+  /* float: left; */
+  font-size: 40px;
+  margin: 0 0 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+}
+div[data-dimension] {
+  float: none;
+  margin: 0 auto;
+}
+.circle-text {
+  color: #fff;
+}
+.single_skill {
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.single_skill > h4 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.icon {
+  color: black;
+}
