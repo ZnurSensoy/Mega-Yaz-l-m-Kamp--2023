@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Akademi Deneme Proje</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="src/assets/style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- React JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+
+    <!-- React Router DOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.3.0/react-router-dom.min.js"></script>
+
+    <!-- Styled Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/5.3.0/styled-components.min.js"></script>
+
+    <!-- Your React Components -->
+    <script src="src/components/KadınGirişim.js"></script>
+    <script src="src/routes.js"></script>
+    <script src="src/pages/AboutPage.js"></script>
+    <script src="src/pages/ContactPage.js"></script>
+    <script src="src/pages/HomePages.js"></script>
+
+    <script>
+        // React Routing
+        const Router = ReactRouterDOM.BrowserRouter;
+        const Route = ReactRouterDOM.Route;
+        const Switch = ReactRouterDOM.Switch;
+
+        // Define your React Components
+        const KadınGirişim = window.KadınGirişim;
+        const AboutPage = window.AboutPage;
+        const ContactPage = window.ContactPage;
+        const HomePage = window.HomePage;
+
+        // Your Routes
+        const Routes = window.Routes;
+
+        ReactDOM.render(
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <HomePage />
+                    </Route>
+                    <Route path="/hakkımızda">
+                        <AboutPage />
+                    </Route>
+                    <Route path="/iletişim">
+                        <ContactPage />
+                    </Route>
+                    {/* Add your PrivateRoute here */}
+                </Switch>
+            </Router>,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
