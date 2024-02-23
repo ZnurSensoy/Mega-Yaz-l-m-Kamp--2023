@@ -1,3 +1,0 @@
-#PROJE HAKKINDA BİLGİLENDİRME İÇİN OKUYUNUZ
-*Bazı özel sebeplerden dolayı istenen özellikleri ekleyebildim fakat dizayn olarak özenemedim.*
-**Proje React ile geliştirilmiş,Arayüz de Bootstrapt kullanılmış,Header da React,router,Style compenens ve (sayfa geçişlerinde React Dom) kullanılmıştır.IDE olarak VS Code kullandım.Projenin çalışması için panelden gerekli (React,js vs.) aktif edilmelidir ve gerekli kaynaklar PC de yüklü/kurulu olmalıdır.Sayfa genel olarak kadın girişimcilere iş ilanı sunma yeri ve iş bulma yeri olarak yapılmıştır.İconları "iconmonstr.com"dan,Görselleri Googleden."React.router.com","ChatGPT"ve çeşitli internet kaynaklarından yardım aldım.Yazdığım kodları mobile de uyumladım.Giriş yapanlar için privade kısmı oluşturdum(premium gibi düşünerek)**
